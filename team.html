@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Our Team | Unstoppable Career Services</title>
+
+<meta name="description" content="Meet the leadership and career professionals behind Unstoppable Career Services.">
+
+<style>
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+body{
+font-family:Arial,Helvetica,sans-serif;
+background:#f7f9fc;
+color:#172235;
+line-height:1.6;
+}
+
+a{
+text-decoration:none;
+}
+
+.container{
+width:min(1150px,92%);
+margin:auto;
+}
+
+/* NAVIGATION */
+
+header{
+background:#071321;
+border-bottom:1px solid rgba(255,255,255,.12);
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.nav{
+min-height:82px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:25px;
+}
+
+.logo img{
+width:175px;
+display:block;
+}
+
+.nav-links{
+display:flex;
+align-items:center;
+gap:24px;
+flex-wrap:wrap;
+}
+
+.nav-links a{
+color:#fff;
+font-size:14px;
+font-weight:700;
+}
+
+.nav-links a:hover{
+color:#d4a72c;
+}
+
+.nav-cta{
+background:#d4a72c;
+color:#071321!important;
+padding:11px 18px;
+border-radius:8px;
+}
+
+/* HERO */
+
+.hero{
+background:linear-gradient(135deg,#071321,#10243a);
+color:#fff;
+text-align:center;
+padding:95px 0;
+}
+
+.eyebrow{
+color:#d4a72c;
+font-size:13px;
+font-weight:800;
+letter-spacing:3px;
+text-transform:uppercase;
+margin-bottom:15px;
+}
+
+.hero h1{
+font-size:56px;
+line-height:1.08;
+max-width:850px;
+margin:0 auto 20px;
+}
+
+.hero p{
+max-width:720px;
+margin:auto;
+font-size:18px;
+color:#dbe4ef;
+}
+
+/* TEAM SECTION */
+
+.team-section{
+padding:85px 0;
+}
+
+.section-heading{
+text-align:center;
+max-width:760px;
+margin:0 auto 55px;
+}
+
+.section-heading h2{
+font-size:40px;
+color:#071321;
+margin-bottom:15px;
+line-height:1.15;
+}
+
+.section-heading p{
+color:#617083;
+font-size:16px;
+}
+
+/* TEAM GRID */
+
+.team-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:28px;
+}
+
+.team-card{
+background:#fff;
+border:1px solid #e1e7ef;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 15px 40px rgba(15,23,42,.07);
+transition:transform .2s ease,box-shadow .2s ease;
+}
+
+.team-card:hover{
+transform:translateY(-5px);
+box-shadow:0 20px 45px rgba(15,23,42,.12);
+}
+
+.team-photo{
+height:330px;
+background:#eef2f6;
+overflow:hidden;
+}
+
+.team-photo img{
+width:100%;
+height:100%;
+object-fit:cover;
+display:block;
+}
+
+.team-content{
+padding:27px;
+}
+
+.team-content h3{
+font-size:24px;
+color:#071321;
+margin-bottom:5px;
+}
+
+.team-title{
+color:#b88916;
+font-size:14px;
+font-weight:800;
+margin-bottom:15px;
+}
+
+.team-content p{
+color:#59687a;
+font-size:15px;
+margin-bottom:18px;
+}
+
+.expertise-title{
+font-size:12px;
+font-weight:800;
+color:#071321;
+letter-spacing:1px;
+text-transform:uppercase;
+margin-bottom:8px;
+}
+
+.expertise{
+font-size:13px;
+color:#617083;
+}
+
+/* MORE TEAM */
+
+.more-team{
+background:#071321;
+color:#fff;
+border-radius:20px;
+padding:38px 30px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:30px;
+margin-top:30px;
+}
+
+.more-team h3{
+font-size:27px;
+margin-bottom:8px;
+}
+
+.more-team p{
+color:#d4dde8;
+max-width:650px;
+}
+
+.more-badge{
+min-width:150px;
+height:150px;
+border:1px solid rgba(212,167,44,.5);
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:#d4a72c;
+font-weight:800;
+font-size:15px;
+padding:20px;
+}
+
+/* APPROACH */
+
+.approach{
+padding:80px 0;
+background:#fff;
+}
+
+.approach-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:55px;
+align-items:center;
+}
+
+.approach h2{
+font-size:39px;
+line-height:1.15;
+color:#071321;
+margin-bottom:18px;
+}
+
+.approach p{
+color:#617083;
+margin-bottom:18px;
+}
+
+.approach-box{
+background:#f7f9fc;
+border:1px solid #e1e7ef;
+border-radius:18px;
+padding:30px;
+}
+
+.approach-box strong{
+display:block;
+color:#b88916;
+font-size:13px;
+letter-spacing:1px;
+margin-bottom:8px;
+}
+
+.approach-box p{
+margin-bottom:20px;
+}
+
+/* CTA */
+
+.cta{
+background:#f7f9fc;
+text-align:center;
+padding:85px 0;
+}
+
+.cta h2{
+font-size:40px;
+color:#071321;
+margin-bottom:15px;
+}
+
+.cta p{
+max-width:650px;
+margin:0 auto 28px;
+color:#617083;
+}
+
+.button{
+display:inline-block;
+background:#d4a72c;
+color:#071321;
+font-weight:800;
+padding:14px 24px;
+border-radius:9px;
+}
+
+/* FOOTER */
+
+footer{
+background:#050e18;
+color:#aebccc;
+padding:40px 0;
+text-align:center;
+font-size:13px;
+}
+
+footer strong{
+color:#fff;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.team-grid{
+grid-template-columns:1fr 1fr;
+}
+
+.approach-grid{
+grid-template-columns:1fr;
+}
+
+}
+
+@media(max-width:700px){
+
+.nav{
+flex-direction:column;
+padding:15px 0;
+}
+
+.nav-links{
+justify-content:center;
+gap:14px;
+}
+
+.hero{
+padding:70px 0;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+.team-grid{
+grid-template-columns:1fr;
+}
+
+.more-team{
+flex-direction:column;
+text-align:center;
+}
+
+.approach h2,
+.cta h2,
+.section-heading h2{
+font-size:31px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<header>
+
+<div class="container nav">
+
+<a href="index.html" class="logo">
+<img src="ChatGPT Image Sep 21, 2026, 12_53_59 AM.png" alt="Unstoppable Career Services">
+</a>
+
+<nav class="nav-links">
+
+<a href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="about.html">About</a>
+<a href="team.html">Our Team</a>
+<a href="results.html">Results</a>
+<a href="faq.html">FAQ</a>
+<a href="contact.html" class="nav-cta">Contact</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="container">
+
+<div class="eyebrow">Our Team</div>
+
+<h1>The Professionals Behind Your Career Strategy</h1>
+
+<p>
+Our team brings together career strategy, executive positioning,
+professional writing, and talent expertise to help professionals
+present their experience with clarity and confidence.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- TEAM -->
+
+<section class="team-section">
+
+<div class="container">
+
+<div class="section-heading">
+
+<div class="eyebrow">Leadership & Expertise</div>
+
+<h2>Meet the People Behind Unstoppable Career Services</h2>
+
+<p>
+Every member of our team contributes a different area of expertise,
+allowing us to provide a more complete professional career experience.
+</p>
+
+</div>
+
+
+<div class="team-grid">
+
+
+<!-- CEO -->
+
+<div class="team-card">
+
+<div class="team-photo">
+
+<img src="ChatGPT Image Sep 21, 2026, 12_53_59 AM.png"
+alt="BALOGUN A. ABDULMUEEZ">
+
+</div>
+
+<div class="team-content">
+
+<h3>BALOGUN A. ABDULMUEEZ</h3>
+
+<div class="team-title">
+CEO & Founder
+</div>
+
+<p>
+Leads the company's vision, strategic direction, and service delivery,
+with a focus on helping professionals position themselves for meaningful
+career opportunities.
+</p>
+
+<div class="expertise-title">
+Area of Expertise
+</div>
+
+<div class="expertise">
+Business Strategy • Career Services • Executive Positioning •
+Leadership • Client Strategy
+</div>
+
+</div>
+
+</div>
+
+
+<!-- DANIEL -->
+
+<div class="team-card">
+
+<div class="team-photo">
+
+<img src="1000686715.png"
+alt="Daniel Joel">
+
+</div>
+
+<div class="team-content">
+
+<h3>Daniel Joel</h3>
+
+<div class="team-title">
+Executive Resume Writer
+</div>
+
+<p>
+Specializes in developing executive-level resumes that present
+leadership experience, measurable achievements, and professional impact.
+</p>
+
+<div class="expertise-title">
+Area of Expertise
+</div>
+
+<div class="expertise">
+Executive Resumes • Resume Strategy • Achievement Positioning •
+Career Documents • ATS Optimization
+</div>
+
+</div>
+
+</div>
+
+
+<!-- VICTORIA -->
+
+<div class="team-card">
+
+<div class="team-photo">
+
+<img src="1786348246759.jpg"
+alt="Victoria Sinclair">
+
+</div>
+
+<div class="team-content">
+
+<h3>Victoria Sinclair</h3>
+
+<div class="team-title">
+Executive Career Consultant
+</div>
+
+<p>
+Works with executives and experienced professionals to strengthen
+their career positioning and present their leadership experience effectively.
+</p>
+
+<div class="expertise-title">
+Area of Expertise
+</div>
+
+<div class="expertise">
+Executive Career Strategy • Leadership Positioning • Executive Branding •
+Career Advancement • Professional Development
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- STILL MORE TEAM -->
+
+<div class="more-team">
+
+<div>
+
+<div class="eyebrow">Growing With Purpose</div>
+
+<h3>And There's Still More Behind the Work.</h3>
+
+<p>
+Unstoppable Career Services is supported by additional professionals,
+specialists, and collaborators whose expertise contributes to the
+different career and talent solutions we provide. As our organization
+continues to grow, more members of our professional network will be
+introduced here.
+</p>
+
+</div>
+
+<div class="more-badge">
+MORE<br>
+PROFESSIONALS<br>
+COMING
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- APPROACH -->
+
+<section class="approach">
+
+<div class="container approach-grid">
+
+<div>
+
+<div class="eyebrow">One Team. One Mission.</div>
+
+<h2>Different expertise. One professional standard.</h2>
+
+<p>
+Career development often requires more than one perspective.
+Our team combines different professional strengths to help clients
+communicate their experience, achievements, leadership, and career
+direction more effectively.
+</p>
+
+<p>
+From executive resumes and professional branding to career strategy
+and talent services, our goal is to create a professional experience
+built around clarity, relevance, evidence, and positioning.
+</p>
+
+</div>
+
+
+<div class="approach-box">
+
+<strong>OUR TEAM VALUES</strong>
+
+<p>
+Professionalism • Integrity • Strategy • Evidence •
+Client Focus • Continuous Development
+</p>
+
+<strong>OUR PURPOSE</strong>
+
+<p>
+To help professionals communicate the value of their experience
+and approach their career opportunities with stronger positioning.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+<div class="container">
+
+<div class="eyebrow">Work With Us</div>
+
+<h2>Ready to Strengthen Your Professional Position?</h2>
+
+<p>
+Tell us where you are in your career and what opportunity you're
+working toward. Our team can help identify the right service for you.
+</p>
+
+<a href="contact.html" class="button">
+Start Your Journey
+</a>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="container">
+
+<strong>UNSTOPPABLE CAREER SERVICES</strong>
+
+<br><br>
+
+Executive Career Strategy • Professional Positioning • Talent Services
+
+<br><br>
+
+unstoppablecareerservices@gmail.com
+
+<br><br>
+
+© 2025 Unstoppable Career Services. All rights reserved.
+
+</div>
+
+</footer>
+
+</body>
+</html>
