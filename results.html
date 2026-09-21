@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Client Results | Unstoppable Career Services</title>
+
+<meta name="description" content="Explore client-reported career outcomes and experiences with Unstoppable Career Services.">
+
+<style>
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+body{
+font-family:Arial,Helvetica,sans-serif;
+color:#172033;
+background:#fff;
+line-height:1.7;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+header{
+background:#071a36;
+color:#fff;
+padding:16px 6%;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:30px;
+position:sticky;
+top:0;
+z-index:1000;
+box-shadow:0 4px 20px rgba(0,0,0,.15);
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:12px;
+font-weight:800;
+letter-spacing:.5px;
+}
+
+.logo img{
+width:54px;
+height:54px;
+object-fit:contain;
+border-radius:8px;
+background:#fff;
+}
+
+nav{
+display:flex;
+gap:24px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+nav a{
+font-size:14px;
+font-weight:700;
+color:#fff;
+opacity:.9;
+}
+
+nav a:hover{
+color:#d6b25e;
+}
+
+.hero{
+background:linear-gradient(135deg,#071a36,#102d55);
+color:#fff;
+padding:105px 6% 90px;
+text-align:center;
+}
+
+.eyebrow{
+color:#d6b25e;
+font-weight:800;
+letter-spacing:2px;
+font-size:13px;
+margin-bottom:15px;
+}
+
+.hero h1{
+font-size:clamp(40px,6vw,68px);
+line-height:1.08;
+max-width:900px;
+margin:auto;
+}
+
+.hero p{
+max-width:780px;
+margin:24px auto 0;
+font-size:18px;
+color:#dfe7f3;
+}
+
+.section{
+padding:85px 6%;
+}
+
+.container{
+max-width:1150px;
+margin:auto;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:45px;
+}
+
+.section-title span{
+color:#a27a22;
+font-weight:800;
+letter-spacing:1.5px;
+font-size:13px;
+}
+
+.section-title h2{
+font-size:40px;
+color:#071a36;
+margin:8px 0 14px;
+}
+
+.section-title p{
+max-width:760px;
+margin:auto;
+color:#657083;
+}
+
+.notice{
+background:#f7f3e9;
+border:1px solid #eadbb8;
+padding:22px 25px;
+border-radius:12px;
+margin-bottom:45px;
+color:#4d5665;
+text-align:center;
+}
+
+.results{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:28px;
+}
+
+.result-card{
+background:#fff;
+border:1px solid #e5e8ed;
+border-radius:16px;
+padding:34px;
+box-shadow:0 12px 32px rgba(7,26,54,.07);
+}
+
+.result-card h3{
+font-size:24px;
+color:#071a36;
+margin-bottom:6px;
+}
+
+.role{
+font-size:14px;
+font-weight:700;
+color:#a27a22;
+margin-bottom:20px;
+}
+
+.quote{
+font-size:17px;
+font-style:italic;
+color:#4f5b6c;
+border-left:4px solid #c29a42;
+padding-left:18px;
+margin-bottom:22px;
+}
+
+.outcome{
+background:#f7f8fa;
+padding:18px;
+border-radius:10px;
+color:#596578;
+font-size:15px;
+}
+
+.outcome strong{
+color:#071a36;
+}
+
+.full{
+grid-column:1/-1;
+}
+
+.method{
+background:#071a36;
+color:#fff;
+}
+
+.method .section-title h2{
+color:#fff;
+}
+
+.method .section-title p{
+color:#cbd5e3;
+}
+
+.method-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:24px;
+}
+
+.method-card{
+padding:30px;
+border:1px solid rgba(255,255,255,.14);
+border-radius:14px;
+background:rgba(255,255,255,.04);
+}
+
+.method-card h3{
+color:#d6b25e;
+margin-bottom:10px;
+font-size:21px;
+}
+
+.method-card p{
+color:#d0d9e6;
+}
+
+.disclaimer{
+font-size:13px;
+color:#7a8492;
+text-align:center;
+max-width:850px;
+margin:45px auto 0;
+}
+
+.cta{
+background:linear-gradient(135deg,#f5f0e5,#fff);
+text-align:center;
+padding:80px 6%;
+}
+
+.cta h2{
+font-size:42px;
+color:#071a36;
+margin-bottom:15px;
+}
+
+.cta p{
+max-width:700px;
+margin:0 auto 28px;
+color:#5e6979;
+}
+
+.btn{
+display:inline-block;
+background:#071a36;
+color:#fff;
+padding:15px 27px;
+border-radius:8px;
+font-weight:800;
+margin:6px;
+}
+
+.btn.gold{
+background:#b78b32;
+}
+
+footer{
+background:#041125;
+color:#aeb9c9;
+text-align:center;
+padding:35px 6%;
+font-size:14px;
+}
+
+footer strong{
+color:#fff;
+}
+
+@media(max-width:850px){
+
+header{
+flex-direction:column;
+}
+
+nav{
+gap:14px;
+}
+
+.results,
+.method-grid{
+grid-template-columns:1fr;
+}
+
+.full{
+grid-column:auto;
+}
+
+.hero{
+padding:75px 6%;
+}
+
+.section{
+padding:65px 6%;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<a href="index.html" class="logo">
+<img src="1786384246759.jpg" alt="Unstoppable Career Services Logo">
+<span>UNSTOPPABLE CAREER SERVICES</span>
+</a>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="about.html">About</a>
+<a href="team.html">Our Team</a>
+<a href="results.html">Results</a>
+<a href="faq.html">FAQ</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+</header>
+
+
+<section class="hero">
+
+<div class="eyebrow">CLIENT EXPERIENCE & OUTCOMES</div>
+
+<h1>When Professional Experience Is Positioned With Clarity.</h1>
+
+<p>
+Our clients have shared meaningful experiences after strengthening
+how their professional background, achievements, and value were presented.
+</p>
+
+</section>
+
+
+<section class="section">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>CLIENT-REPORTED RESULTS</span>
+
+<h2>Real Experiences From Professionals.</h2>
+
+<p>
+The examples below reflect outcomes and experiences reported by individual
+clients. Results vary by individual circumstances, qualifications,
+market conditions, and opportunities pursued.
+</p>
+
+</div>
+
+
+<div class="notice">
+
+<strong>Important:</strong> These are client-reported experiences and are
+provided for informational purposes. They are not guarantees of future
+employment, interviews, offers, or compensation.
+
+</div>
+
+
+<div class="results">
+
+
+<div class="result-card">
+
+<h3>Phil F.</h3>
+
+<div class="role">
+Executive / Professional Job Seeker — Greater Los Angeles Area
+</div>
+
+<div class="quote">
+“The résumé and LinkedIn work helped communicate my value more effectively.”
+</div>
+
+<div class="outcome">
+<strong>Reported experience:</strong><br>
+Phil reported that four headhunters found him through LinkedIn and that
+he was starting a new job after strengthening his professional positioning.
+</div>
+
+</div>
+
+
+<div class="result-card">
+
+<h3>Garrett Page</h3>
+
+<div class="role">
+Director, Commercial & Workplace Operations — Rivian
+</div>
+
+<div class="quote">
+Garrett shared positive feedback about the LinkedIn and CV revamp and
+indicated that he would use the service again.
+</div>
+
+<div class="outcome">
+<strong>Reported experience:</strong><br>
+The career-document and professional-branding work helped refresh how
+his experience and leadership background were presented.
+</div>
+
+</div>
+
+
+<div class="result-card">
+
+<h3>John Abe</h3>
+
+<div class="role">
+High Tech Executive — Silicon Valley Technology
+</div>
+
+<div class="quote">
+John reported that his new CV helped surface achievements that had not
+previously been communicated as effectively.
+</div>
+
+<div class="outcome">
+<strong>Reported experience:</strong><br>
+He reported receiving interviews for five roles and receiving two offers,
+including opportunities involving Chief Engineer / Head of Design Office
+and Head of Airframe responsibilities.
+</div>
+
+</div>
+
+
+<div class="result-card">
+
+<h3>Stuart E.</h3>
+
+<div class="role">
+Global Sales, Marketing & General Management Executive — Fortune 5 Company
+</div>
+
+<div class="quote">
+“The results from my resume are in and they are phenomenal, exceeding even
+my most favorable expectations.”
+</div>
+
+<div class="outcome">
+<strong>Reported experience:</strong><br>
+Stuart reported responses from five of six targeted companies, four phone
+interviews, three fly-outs, and an EVP-level offer.
+</div>
+
+</div>
+
+
+<div class="result-card full">
+
+<h3>A Pattern We Focus On</h3>
+
+<div class="role">
+Clarity • Relevance • Evidence • Positioning
+</div>
+
+<p style="color:#596578;margin-bottom:18px;">
+Strong career materials are not simply about adding more words to a résumé.
+They are about making the right professional evidence easier to understand,
+connecting experience to the intended direction, and presenting achievements
+in a credible and strategic way.
+</p>
+
+<p style="color:#596578;">
+That principle guides our work across executive résumés, LinkedIn
+optimization, cover letters, Candidate Evidence Strategy, career
+development, and talent services.
+</p>
+
+</div>
+
+</div>
+
+
+<p class="disclaimer">
+Client outcomes are individually reported and may not be representative
+of the experience of every client. Unstoppable Career Services does not
+guarantee employment, interviews, job offers, promotions, compensation,
+or any particular career outcome.
+</p>
+
+</div>
+
+</section>
+
+
+<section class="section method">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>OUR STANDARD</span>
+
+<h2>What We Work To Strengthen.</h2>
+
+<p>
+Every professional has a different background. Our role is to help
+communicate that background with structure and purpose.
+</p>
+
+</div>
+
+
+<div class="method-grid">
+
+<div class="method-card">
+
+<h3>01 — Clarity</h3>
+
+<p>
+Making responsibilities, leadership scope, achievements, and career
+direction easier to understand.
+</p>
+
+</div>
+
+
+<div class="method-card">
+
+<h3>02 — Relevance</h3>
+
+<p>
+Connecting professional experience to the types of roles and opportunities
+the client is pursuing.
+</p>
+
+</div>
+
+
+<div class="method-card">
+
+<h3>03 — Evidence</h3>
+
+<p>
+Bringing measurable achievements, responsibilities, projects, and
+professional impact into the career story.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="cta">
+
+<h2>Ready to Strengthen Your Professional Positioning?</h2>
+
+<p>
+Your experience already contains the evidence. The next step is making
+that value easier to see, understand, and communicate.
+</p>
+
+<a class="btn" href="contact.html">Start a Conversation</a>
+
+<a class="btn gold" href="services.html">Explore Our Services</a>
+
+</section>
+
+
+<footer>
+
+<p>
+<strong>UNSTOPPABLE CAREER SERVICES</strong>
+</p>
+
+<p>
+Executive Career Strategy • Professional Positioning • Talent Services
+</p>
+
+<p>
+© 2025 Unstoppable Career Services. All rights reserved.
+</p>
+
+</footer>
+
+</body>
+</html>
