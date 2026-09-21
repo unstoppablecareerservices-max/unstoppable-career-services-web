@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FAQ | Unstoppable Career Services</title>
+
+<meta name="description" content="Frequently asked questions about Unstoppable Career Services, our career services, process, Candidate Evidence Strategy, and client experience.">
+
+<style>
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+body{
+font-family:Arial,Helvetica,sans-serif;
+color:#172033;
+background:#fff;
+line-height:1.7;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+header{
+background:#071a36;
+color:#fff;
+padding:16px 6%;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:30px;
+position:sticky;
+top:0;
+z-index:1000;
+box-shadow:0 4px 20px rgba(0,0,0,.15);
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:12px;
+font-weight:800;
+letter-spacing:.5px;
+}
+
+.logo img{
+width:54px;
+height:54px;
+object-fit:contain;
+border-radius:8px;
+background:#fff;
+}
+
+nav{
+display:flex;
+gap:24px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+nav a{
+font-size:14px;
+font-weight:700;
+color:#fff;
+opacity:.9;
+}
+
+nav a:hover{
+color:#d6b25e;
+}
+
+.hero{
+background:linear-gradient(135deg,#071a36,#102d55);
+color:#fff;
+padding:105px 6% 90px;
+text-align:center;
+}
+
+.eyebrow{
+color:#d6b25e;
+font-weight:800;
+letter-spacing:2px;
+font-size:13px;
+margin-bottom:15px;
+}
+
+.hero h1{
+font-size:clamp(40px,6vw,68px);
+line-height:1.08;
+max-width:900px;
+margin:auto;
+}
+
+.hero p{
+max-width:760px;
+margin:24px auto 0;
+font-size:18px;
+color:#dfe7f3;
+}
+
+.section{
+padding:85px 6%;
+}
+
+.container{
+max-width:950px;
+margin:auto;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:45px;
+}
+
+.section-title span{
+color:#a27a22;
+font-weight:800;
+letter-spacing:1.5px;
+font-size:13px;
+}
+
+.section-title h2{
+font-size:40px;
+color:#071a36;
+margin:8px 0 14px;
+}
+
+.section-title p{
+max-width:720px;
+margin:auto;
+color:#657083;
+}
+
+.faq-list{
+display:flex;
+flex-direction:column;
+gap:18px;
+}
+
+.faq{
+border:1px solid #e4e7ec;
+border-radius:14px;
+background:#fff;
+overflow:hidden;
+box-shadow:0 8px 25px rgba(7,26,54,.05);
+}
+
+.faq summary{
+cursor:pointer;
+list-style:none;
+padding:24px 28px;
+font-size:19px;
+font-weight:800;
+color:#071a36;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:20px;
+}
+
+.faq summary::-webkit-details-marker{
+display:none;
+}
+
+.faq summary::after{
+content:"+";
+font-size:28px;
+font-weight:400;
+color:#b78b32;
+flex-shrink:0;
+}
+
+.faq[open] summary::after{
+content:"−";
+}
+
+.answer{
+padding:0 28px 25px;
+color:#5d6878;
+font-size:16px;
+}
+
+.answer strong{
+color:#071a36;
+}
+
+.dark{
+background:#071a36;
+color:#fff;
+}
+
+.dark .section-title h2{
+color:#fff;
+}
+
+.dark .section-title p{
+color:#cbd5e3;
+}
+
+.help-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:24px;
+}
+
+.help-card{
+padding:30px;
+border:1px solid rgba(255,255,255,.14);
+border-radius:14px;
+background:rgba(255,255,255,.04);
+}
+
+.help-card h3{
+color:#d6b25e;
+margin-bottom:10px;
+font-size:21px;
+}
+
+.help-card p{
+color:#d0d9e6;
+}
+
+.cta{
+background:linear-gradient(135deg,#f5f0e5,#fff);
+text-align:center;
+padding:80px 6%;
+}
+
+.cta h2{
+font-size:42px;
+color:#071a36;
+margin-bottom:15px;
+}
+
+.cta p{
+max-width:700px;
+margin:0 auto 28px;
+color:#5e6979;
+}
+
+.btn{
+display:inline-block;
+background:#071a36;
+color:#fff;
+padding:15px 27px;
+border-radius:8px;
+font-weight:800;
+margin:6px;
+}
+
+.btn.gold{
+background:#b78b32;
+}
+
+footer{
+background:#041125;
+color:#aeb9c9;
+text-align:center;
+padding:35px 6%;
+font-size:14px;
+}
+
+footer strong{
+color:#fff;
+}
+
+@media(max-width:850px){
+
+header{
+flex-direction:column;
+}
+
+nav{
+gap:14px;
+}
+
+.help-grid{
+grid-template-columns:1fr;
+}
+
+.hero{
+padding:75px 6%;
+}
+
+.section{
+padding:65px 6%;
+}
+
+.faq summary{
+font-size:17px;
+padding:21px;
+}
+
+.answer{
+padding:0 21px 22px;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<a href="index.html" class="logo">
+<img src="1786384246759.jpg" alt="Unstoppable Career Services Logo">
+<span>UNSTOPPABLE CAREER SERVICES</span>
+</a>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="about.html">About</a>
+<a href="team.html">Our Team</a>
+<a href="results.html">Results</a>
+<a href="faq.html">FAQ</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+</header>
+
+
+<section class="hero">
+
+<div class="eyebrow">FREQUENTLY ASKED QUESTIONS</div>
+
+<h1>Questions Before You Begin?</h1>
+
+<p>
+Here are answers to some of the questions professionals commonly ask
+about our services, process, and approach.
+</p>
+
+</section>
+
+
+<section class="section">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>GENERAL QUESTIONS</span>
+
+<h2>How We Work</h2>
+
+<p>
+A clear understanding of the process helps you know what to expect
+before starting a service.
+</p>
+
+</div>
+
+
+<div class="faq-list">
+
+
+<details class="faq">
+
+<summary>What does Unstoppable Career Services do?</summary>
+
+<div class="answer">
+<p>
+Unstoppable Career Services provides professional career strategy,
+positioning, career-document, executive development, and talent services.
+Our work helps professionals communicate their experience, achievements,
+leadership, and professional value more effectively.
+</p>
+</div>
+
+</details>
+
+
+<details class="faq">
+
+<summary>Who are your services designed for?</summary>
+
+<div class="answer">
+<p>
+Our services can support executives, senior leaders, experienced
+professionals, career transitioners, and other professionals who want
+to strengthen their career positioning and professional presentation.
+</p>
+</div>
+
+</details>
+
+
+<details class="faq">
+
+<summary>Do you only work with executives?</summary>
+
+<div class="answer">
+<p>
+No. While executive-level career strategy is an important part of our
+work, we also support experienced professionals and individuals navigating
+career transitions or seeking stronger professional positioning.
+</p>
+</div>
+
+</details>
+
+
+<details class="faq">
+
+<summary>How does the process begin?</summary>
+
+<div class="answer">
+<p>
+The process begins by understanding your professional background,
+career direction, objectives, and the type of support you are seeking.
+From there, the appropriate service and scope can be discussed.
+</p>
+</div>
+
+</details>
+
+
+<details class="faq">
+
+<summary>Will my résumé be completely rewritten?</summary>
+
+<div class="answer">
+<p>
+The approach depends on the service selected and the condition of your
+existing materials. The focus is not simply on changing words. We look
+at how your experience, achievements, responsibilities, and professional
+value are communicated.
+</p>
+</div>
+
+</details>
+
+
+<details class="faq">
+
+<summary>What is Candidate Evidence Strategy (CES)?</summary>
+
+<div class="answer">
+<p>
+Candidate Evidence Strategy is a structured approach to identifying,
+organizing, and presenting relevant professional evidence that supports
+a candidate's positioning for a specific career opportunity.
+</p>
+
+<p style="margin-top:12px;">
+The scope of CES can vary depending on the candidate, opportunity,
+professional background, and information available.
+</p>
+</div>
+
+</details>
+
+
+<details class="faq">
+
+<summary>Can you guarantee that I will get a job or interview?</summary>
+
+<div class="answer">
+<p>
+<strong>No.</strong> Employment outcomes depend on many factors outside
+the control of any career service provider, including qualifications,
+competition, employer requirements, market conditions, timing, and
+individual hiring decisions.
+</p>
+
+<p style="margin-top:12px;">
+Our role is to help strengthen how your professional experience and value
+are communicated. We do not guarantee employment, interviews, offers,
+promotions, or compensation.
+</p>
+</div>
+
+</details>
+
+
+<details class="faq">
+
+<summary>Can you work with my existing résumé and LinkedIn profile?</summary>
+
+<div class="answer">
+<p>
+Yes. Existing career materials can provide useful context about your
+professional history, responsibilities, achievements, and current
+positioning. The appropriate approach depends on the service selected.
+</p>
+</div>
+
+</details>
+
+
+<details class="faq">
+
+<summary>Do you work with confidential career information?</summary>
+
+<div class="answer">
+<p>
+Clients should only provide information they are comfortable sharing for
+the purpose of the requested service. Sensitive information should be
+handled thoughtfully, and clients should avoid sharing passwords,
+financial account credentials, or other unnecessary security information.
+</p>
+</div>
+
+</details>
+
+
+<details class="faq">
+
+<summary>How long does a service take?</summary>
+
+<div class="answer">
+<p>
+Timelines vary depending on the service, scope of work, information
+required, and level of customization. A delivery timeline can be
+confirmed when the service scope is established.
+</p>
+</div>
+
+</details>
+
+
+<details class="faq">
+
+<summary>Can I ask questions before purchasing a service?</summary>
+
+<div class="answer">
+<p>
+Yes. We encourage professionals to understand the service and scope
+before proceeding. You can contact our team to discuss what you are
+trying to accomplish and determine what type of support may be relevant.
+</p>
+</div>
+
+</details>
+
+
+<details class="faq">
+
+<summary>Do you provide recruiting and talent services?</summary>
+
+<div class="answer">
+<p>
+Yes. Recruiting and talent services are part of our broader professional
+service offering. The specific scope depends on the organization,
+position, hiring requirements, and engagement.
+</p>
+</div>
+
+</details>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section dark">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>OUR PRINCIPLES</span>
+
+<h2>What You Can Expect From Us.</h2>
+
+<p>
+Our work is built around a straightforward professional approach.
+</p>
+
+</div>
+
+
+<div class="help-grid">
+
+<div class="help-card">
+
+<h3>Clear Communication</h3>
+
+<p>
+We aim to keep expectations, service scope, and next steps clear
+throughout the engagement.
+</p>
+
+</div>
+
+
+<div class="help-card">
+
+<h3>Professional Strategy</h3>
+
+<p>
+We focus on the relationship between your experience, your objectives,
+and how your professional value is communicated.
+</p>
+
+</div>
+
+
+<div class="help-card">
+
+<h3>Authentic Evidence</h3>
+
+<p>
+We work with your real professional background and evidence rather than
+manufacturing achievements or credentials.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="cta">
+
+<h2>Still Have a Question?</h2>
+
+<p>
+If you have a question that is not answered here, contact us and tell us
+what you are trying to accomplish. We can help clarify the appropriate
+next step.
+</p>
+
+<a class="btn" href="contact.html">Contact Our Team</a>
+
+<a class="btn gold" href="services.html">View Services</a>
+
+</section>
+
+
+<footer>
+
+<p>
+<strong>UNSTOPPABLE CAREER SERVICES</strong>
+</p>
+
+<p>
+Executive Career Strategy • Professional Positioning • Talent Services
+</p>
+
+<p>
+© 2025 Unstoppable Career Services. All rights reserved.
+</p>
+
+</footer>
+
+</body>
+</html>
